@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Admin dashboard</title>
+    <link rel="stylesheet" href="./Admin dashboard_files/styles.css"></head>
+    <body>
+        <div class="outer-container">
+            <div class="header">
+                <div class="search-area">
+                    <form action="http://127.0.0.1:5500/index.html">
+                        <label for="search">icon</label>
+                        <input type="text"></form>
+                </div>
+                <div class="login-area">
+                    <div class="bell">bell</div>
+                    <img class="avatar-small" src="http://127.0.0.1:5500/index.html" alt="cute-avatar">
+                    <p>name</p>
+                </div>
+                <div class="greeting-area">
+                    <img class="avatar-large" src="http://127.0.0.1:5500/index.html" alt="cute-avatar">
+                    <div class="greeting-text">
+                        <p>Hi there,</p>
+                        <p>namejSDJFJA;SDFJA;LDFA;LFHA;DLFHA;FLHAD;LHA;LHD;HADG;ALHK</p>
+                    </div>
+                </div>
+                <div class="button-area">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="heading">Dashboard</div>
+
+                <ul class="sidebar-menu-items"><li>Home</li>
+                    <li>Profile</li>
+                    <li>Messages</li>
+                    <li>History</li>
+                    <li>Tasks</li>
+                    <li>Communities</li></ul>
+                <ul class="sidebar-account-options"><li>Settings</li>
+                    <li>Support</li>
+                    <li>Privacy</li></ul>
+
+            </div>
+
+            <div class="main-content">
+                <div class="projects-outer">
+                    <p>Your Projects</p>
+                    <div class="projects">
+                        <div class="project-card">1</div>
+                        <div class="project-card">2</div>
+                        <div class="project-card">3</div>
+                        <div class="project-card">4</div>
+                        <div class="project-card">5</div>
+                        <div class="project-card">6</div>
+                    </div>
+                </div>
+                <div class="announcements-outer">
+                    <p>Announcements</p>
+                    <div class="announcements"></div>
+                </div>
+                <div class="trending-outer">
+                    <p>Trending</p>
+                    <div class="trending"></div>
+                </div>
+            </div>
+        </div>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
